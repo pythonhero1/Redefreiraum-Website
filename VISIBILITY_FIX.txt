@@ -1,0 +1,10 @@
+Static visibility repair
+
+Jimdo scroll-reveal wrappers saved with opacity:0 were converted to opacity:1.
+Affected pages:
+- eva-maria-trost.html: 2 reveal wrapper(s)
+- honorar.html: 2 reveal wrapper(s)
+- hypnose.html: 2 reveal wrapper(s)
+- intuequi.html: 2 reveal wrapper(s)
+- kontakt.html: 2 reveal wrapper(s)
+- praxis.html: 1 reveal wrapper(s)

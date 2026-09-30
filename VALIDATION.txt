@@ -1,0 +1,15 @@
+index.html: original_text=1388, rebuilt_text=1388, exact_text_match=True
+widerruf.html: original_text=935, rebuilt_text=935, exact_text_match=True
+leistungen.html: original_text=4948, rebuilt_text=4948, exact_text_match=True
+honorar.html: original_text=4310, rebuilt_text=4310, exact_text_match=True
+hypnose.html: original_text=7003, rebuilt_text=7003, exact_text_match=True
+cookie-einstellungen.html: original_text=5354, rebuilt_text=5354, exact_text_match=True
+eva-maria-trost.html: original_text=3818, rebuilt_text=3818, exact_text_match=True
+kontakt.html: original_text=3811, rebuilt_text=3811, exact_text_match=True
+online-terminvereinbarung.html: original_text=1005, rebuilt_text=1005, exact_text_match=True
+praxis.html: original_text=1273, rebuilt_text=1273, exact_text_match=True
+impressum.html: original_text=1554, rebuilt_text=1554, exact_text_match=True
+intuequi.html: original_text=7085, rebuilt_text=7085, exact_text_match=True
+datenschutz.html: original_text=28644, rebuilt_text=28644, exact_text_match=True
+
+Missing local refs: 0

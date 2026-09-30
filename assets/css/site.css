@@ -1,0 +1,394 @@
+
+/* Static replacement for Jimdo navigation dropdown behavior */
+@media (min-width:801px){
+  .DjAD4 > .Ptk8T > nav > .ACV1J{display:none!important;}
+  .DjAD4 > .Ptk8T:hover > nav > .ACV1J,
+  .DjAD4 > .Ptk8T:focus-within > nav > .ACV1J,
+  .DjAD4 > .Ptk8T.static-dropdown-open > nav > .ACV1J{display:block!important;}
+  .DjAD4 > .Ptk8T > nav{position:absolute;right:0;top:100%;z-index:9999;padding-top:10px!important;margin-top:0!important;}
+  .DjAD4 > .Ptk8T > nav > .ACV1J{top:0!important;margin-top:0!important;}
+  .DjAD4 > .Ptk8T.static-dropdown-open .Kuirh .BLXTG{transform:rotate(180deg);}
+}
+@media (max-width:800px){
+  .h29F6 ._E6P6 > ul{max-height:0!important;overflow:hidden!important;transition:max-height .25s ease!important;}
+  .h29F6 ._E6P6.static-mobile-open > ul{max-height:500px!important;}
+  .h29F6 .RkeXe.static-arrow-open svg{transform:rotate(180deg)!important;}
+}
+
+
+
+/* Restore Jimdo header booking control in static export */
+.nENnt .Wwk5L {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:auto !important;
+  max-width:100% !important;
+  margin:10px !important;
+  padding:0 !important;
+  background:#fff !important;
+  color:#323335 !important;
+  border:0 !important;
+  border-radius:5px !important;
+  text-decoration:none !important;
+  cursor:pointer !important;
+  overflow:hidden !important;
+  -webkit-tap-highlight-color:transparent;
+}
+.nENnt .Wwk5L .pSsxA {
+  display:block !important;
+  width:auto !important;
+  padding:16px 30px !important;
+  border:1px solid transparent !important;
+  border-radius:inherit !important;
+  background:transparent !important;
+  color:#323335 !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  transition:background-color .2s ease, color .2s ease !important;
+}
+.nENnt .Wwk5L:hover .pSsxA,
+.nENnt .Wwk5L:focus-visible .pSsxA { background:rgba(0,0,0,.08) !important; }
+.nENnt .Wwk5L:focus-visible { outline:2px solid #323335 !important; outline-offset:2px !important; }
+
+/* Restore social icon controls and prevent default blue link styling */
+.IS6uY .LDwHJ { display:flex !important; align-items:center !important; gap:10px !important; }
+.IS6uY .EqttM {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:40px !important;
+  height:40px !important;
+  padding:0 !important;
+  color:#323335 !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:5px !important;
+  text-decoration:none !important;
+  cursor:pointer !important;
+  transition:opacity .2s ease, background-color .2s ease !important;
+  -webkit-tap-highlight-color:transparent;
+}
+.IS6uY .EqttM svg { display:block !important; color:inherit !important; }
+.IS6uY .EqttM svg path { fill:currentColor !important; }
+.IS6uY .EqttM:hover { opacity:.55 !important; background:rgba(255,255,255,.12) !important; }
+.IS6uY .EqttM:focus-visible { outline:2px solid #323335 !important; outline-offset:2px !important; }
+
+@media (max-width:800px) {
+  .nENnt .Wwk5L .pSsxA { padding:13px 20px !important; }
+}
+
+
+
+/* Header controls: static-site overrides */
+.IS6uY .EqttM,
+.IS6uY .EqttM:visited,
+.IS6uY .EqttM:hover,
+.IS6uY .EqttM:focus {
+  color: #ffffff !important;
+}
+.IS6uY .EqttM svg,
+.IS6uY .EqttM svg path {
+  color: #ffffff !important;
+  fill: currentColor !important;
+}
+.nENnt .Wwk5L .pSsxA {
+  background: #ffffff !important;
+  color: #323335 !important;
+}
+
+/* =========================================================
+   Static mobile navigation
+   Replaces Jimdo runtime-dependent off-canvas behaviour.
+   ========================================================= */
+.static-mobile-menu-toggle{display:none;}
+
+@media (max-width:800px){
+  html.static-menu-open,
+  body.static-menu-open{overflow:hidden!important;}
+
+  .DyyGf{
+    min-height:72px!important;
+    padding:0 18px!important;
+    align-items:center!important;
+    position:relative!important;
+    z-index:2101!important;
+  }
+  .DyyGf .VMnwf{margin:0!important;}
+  .DyyGf .AKcQs > a > div{width:66px!important;padding:12px 0!important;}
+
+  /* Hide desktop-only controls on mobile. */
+  .DyyGf .S7q2B{display:none!important;}
+
+  .static-mobile-menu-toggle{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    position:relative!important;
+    width:46px!important;
+    height:46px!important;
+    margin-left:auto!important;
+    padding:0!important;
+    border:1px solid rgba(255,255,255,.32)!important;
+    border-radius:50%!important;
+    background:transparent!important;
+    color:#fff!important;
+    cursor:pointer!important;
+    z-index:2202!important;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .static-mobile-menu-toggle:focus-visible{
+    outline:2px solid #fff!important;
+    outline-offset:3px!important;
+  }
+  .static-mobile-menu-toggle .static-menu-lines,
+  .static-mobile-menu-toggle .static-menu-lines::before,
+  .static-mobile-menu-toggle .static-menu-lines::after{
+    content:"";
+    display:block;
+    width:20px;
+    height:1.5px;
+    border-radius:2px;
+    background:currentColor;
+    transition:transform .22s ease, opacity .18s ease;
+  }
+  .static-mobile-menu-toggle .static-menu-lines{position:relative;}
+  .static-mobile-menu-toggle .static-menu-lines::before{position:absolute;left:0;top:-6px;}
+  .static-mobile-menu-toggle .static-menu-lines::after{position:absolute;left:0;top:6px;}
+  .static-mobile-menu-toggle[aria-expanded="true"] .static-menu-lines{background:transparent;}
+  .static-mobile-menu-toggle[aria-expanded="true"] .static-menu-lines::before{top:0;transform:rotate(45deg);}
+  .static-mobile-menu-toggle[aria-expanded="true"] .static-menu-lines::after{top:0;transform:rotate(-45deg);}
+
+  /* Full-width panel directly below the header. */
+  .G4Yk_.static-mobile-menu{
+    position:fixed!important;
+    inset:72px 0 0 0!important;
+    width:100%!important;
+    max-width:none!important;
+    height:calc(100dvh - 72px)!important;
+    min-height:0!important;
+    padding:0!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:space-between!important;
+    background:#6d7b72!important;
+    color:#fff!important;
+    transform:translateY(-8px)!important;
+    opacity:0!important;
+    visibility:hidden!important;
+    pointer-events:none!important;
+    transition:opacity .22s ease, transform .22s ease, visibility 0s linear .22s!important;
+    z-index:2100!important;
+    -webkit-overflow-scrolling:touch;
+  }
+  .G4Yk_.static-mobile-menu.static-mobile-menu-open{
+    transform:translateY(0)!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    transition:opacity .22s ease, transform .22s ease!important;
+  }
+  .G4Yk_.static-mobile-menu .bEi0A{
+    width:100%!important;
+    padding:22px 20px 10px!important;
+  }
+  .G4Yk_.static-mobile-menu .h29F6{
+    width:min(100%,560px)!important;
+    margin:0 auto!important;
+    padding:0!important;
+  }
+  .G4Yk_.static-mobile-menu .h29F6 > li{
+    width:100%!important;
+    margin:0!important;
+    border-bottom:1px solid rgba(255,255,255,.18)!important;
+  }
+  .G4Yk_.static-mobile-menu .ZuOGq{
+    display:flex!important;
+    align-items:center!important;
+    min-height:58px!important;
+    position:relative!important;
+  }
+  .G4Yk_.static-mobile-menu .ZuOGq > a{
+    flex:1 1 auto!important;
+    display:flex!important;
+    align-items:center!important;
+    min-height:58px!important;
+    padding:0 4px!important;
+    color:#fff!important;
+    text-decoration:none!important;
+    font-size:18px!important;
+    line-height:1.25!important;
+  }
+  .G4Yk_.static-mobile-menu .ZuOGq > a:hover,
+  .G4Yk_.static-mobile-menu .ZuOGq > a:focus-visible{opacity:.72!important;}
+
+  .G4Yk_.static-mobile-menu .RkeXe{
+    flex:0 0 48px!important;
+    width:48px!important;
+    height:48px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    margin:0!important;
+    border-radius:50%!important;
+    cursor:pointer!important;
+    color:#fff!important;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .G4Yk_.static-mobile-menu .RkeXe:hover{background:rgba(255,255,255,.1)!important;}
+  .G4Yk_.static-mobile-menu .RkeXe svg{transition:transform .2s ease!important;}
+  .G4Yk_.static-mobile-menu .RkeXe.static-arrow-open svg{transform:rotate(180deg)!important;}
+
+  .G4Yk_.static-mobile-menu ._E6P6{
+    overflow:hidden!important;
+  }
+  .G4Yk_.static-mobile-menu ._E6P6 > ul{
+    max-height:0!important;
+    overflow:hidden!important;
+    margin:0!important;
+    padding:0!important;
+    transition:max-height .28s ease!important;
+  }
+  .G4Yk_.static-mobile-menu ._E6P6.static-mobile-open > ul{
+    max-height:320px!important;
+  }
+  .G4Yk_.static-mobile-menu ._E6P6 li{
+    border-top:1px solid rgba(255,255,255,.1)!important;
+  }
+  .G4Yk_.static-mobile-menu ._E6P6 .ZuOGq{
+    min-height:50px!important;
+  }
+  .G4Yk_.static-mobile-menu ._E6P6 .ZuOGq > a{
+    min-height:50px!important;
+    padding-left:20px!important;
+    font-size:16px!important;
+    opacity:.92!important;
+  }
+
+  .static-mobile-actions{
+    width:min(calc(100% - 40px),560px)!important;
+    margin:18px auto 0!important;
+    padding:20px 0 max(26px,env(safe-area-inset-bottom))!important;
+  }
+  .static-mobile-booking{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:50px!important;
+    width:100%!important;
+    padding:12px 20px!important;
+    border-radius:5px!important;
+    background:#fff!important;
+    color:#323335!important;
+    text-decoration:none!important;
+    font-size:16px!important;
+    line-height:1.2!important;
+  }
+  .static-mobile-socials{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:12px!important;
+    margin-top:16px!important;
+  }
+  .static-mobile-socials a{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:46px!important;
+    height:46px!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:50%!important;
+    color:#fff!important;
+    text-decoration:none!important;
+  }
+  .static-mobile-socials svg{width:20px!important;height:20px!important;fill:currentColor!important;}
+}
+
+/* ==========================================================
+   Static content accordions — replaces Jimdo runtime behavior
+   ========================================================== */
+.T5XiN > .aEvO4:first-child .static-content-accordion-trigger{
+  cursor:pointer!important;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+}
+.T5XiN > .aEvO4:first-child .static-content-accordion-trigger:focus-visible{
+  outline:2px solid currentColor!important;
+  outline-offset:5px!important;
+}
+.static-content-accordion-panel{
+  max-height:0;
+  overflow:hidden!important;
+  transition:max-height .3s ease!important;
+  will-change:max-height;
+}
+.static-content-accordion-icon{
+  pointer-events:none!important;
+}
+.static-content-accordion-icon svg path{
+  transition:opacity .18s ease, transform .22s ease!important;
+  transform-origin:center!important;
+}
+/* The first SVG path is the vertical stroke of Jimdo's + icon. Hide it when open -> minus. */
+.static-content-accordion-open .static-content-accordion-icon svg path:first-of-type{
+  opacity:0!important;
+  transform:scaleY(0)!important;
+}
+.static-content-accordion-open .static-content-accordion-icon svg path:last-of-type{
+  opacity:1!important;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .static-content-accordion-panel,
+  .static-content-accordion-icon svg path{
+    transition:none!important;
+  }
+}
+
+
+/* Rebuilt-from-original safeguards */
+img { max-width: 100%; }
+.WCO6N { visibility: visible !important; opacity: 1 !important; }
+/* Keep saved content visible; Jimdo runtime is intentionally absent. */
+[data-static-preserve-content="true"] { display: revert; }
+/* Avoid dead click layers from the old renderer. */
+body > div[role="dialog"]:empty { display:none !important; }
+/* Make accordion rows easy to tap without changing original visual composition. */
+.static-content-accordion-trigger { width:100%; }
+@media (max-width:800px){
+  .static-content-accordion-trigger { touch-action:manipulation; }
+}
+
+
+/* Static FAQ accordion support (Hypnose) */
+.nNOvF > .kp6k7.ioiWE {
+  overflow: hidden;
+  transition: max-height 220ms ease;
+}
+.nNOvF > button.vKFKO { cursor: pointer; }
+.nNOvF > button.vKFKO .ngC8Y { transition: transform 220ms ease; }
+.nNOvF.static-faq-open > button.vKFKO .ngC8Y { transform: rotate(45deg); }
+@media (prefers-reduced-motion: reduce) {
+  .nNOvF > .kp6k7.ioiWE,
+  .nNOvF > button.vKFKO .ngC8Y { transition: none !important; }
+}
+
+/* Static Jimdo accordion image visibility fix.
+   Jimdo leaves accordion image wrappers as .h8ZeB.jzuMI { opacity:0 }
+   until its runtime animates them in. Our static accordion controller uses
+   .static-content-accordion-open, so reveal those original image wrappers
+   only while the corresponding accordion is open. */
+.static-content-accordion-open .static-content-accordion-panel .h8ZeB.jzuMI,
+.static-content-accordion-open .kp6k7 .h8ZeB.jzuMI {
+  opacity: 1 !important;
+}
+
+/* Keep image sizing stable after reveal, including the <=1280px stacked layout. */
+.static-content-accordion-open .h8ZeB.jzuMI .FHs03,
+.static-content-accordion-open .h8ZeB.jzuMI .OAT9p,
+.static-content-accordion-open .h8ZeB.jzuMI img.WCO6N {
+  visibility: visible !important;
+}
